@@ -1,8 +1,7 @@
 import type { Request, Response } from "express";
 import prisma from "../models/user.js";
 import { hashPassword } from "../services/password.service.js";
-import { hash } from "crypto";
-import user from "../models/user.js";
+
 
 export const createUser = async (
   req: Request,
